@@ -45,7 +45,7 @@ const App = () => {
           {
             products.map((product) => (
               <div key={product.name} className="theproduct">
-                <h4>{product.name}</h4>
+                <h4 onClick={()=> {window.location.reload()}}>{product.name}</h4>
                 <p>{product.price}</p>
                 <small>{product.category}</small>
                 <br />
